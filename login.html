@@ -1,0 +1,154 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>login</title>
+   <style>
+   @import url("https://fonts.googleapis.com/css?family=Lacquer&display=swap");
+   h1 {font-family : "Bahnschrift"; font-size : 40px; color : snow;}
+   html {text-align: center; background-image:url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%2337474F" fill-opacity="0.5"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')
+   ;background-color: #263238;}
+   p {font-style : revert; color : white;}
+   #login-form {
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 20px;
+   background: #000000;
+   }
+   #login-form h1 {
+   margin: 0 0 10px 0;
+   }
+   #login-form input{
+   box-sizing: border-box;
+   width: 100%;
+   margin: 10px;
+   padding : 10px;
+   }
+   #login-form input[type=submit]{
+   border:1px solid brown;
+   border-radius: 6px;
+   background: #fffafa;
+   }
+   #login-form input[type=button]{
+   border:1px solid brown;
+   border-radius: 6px;
+   background: #fffafa;
+   }
+   @keyframes sparkle {
+   from {
+   background-position: 0% 100%;
+   }
+   to {
+   background-position: 200% 100%;
+   }
+   }
+
+   .test {
+   display: inline-block;
+   padding: 1em;
+   border-radius: 4px;
+   position: relative;
+   }
+
+   .test:before {
+   animation: sparkle 4s infinite linear;
+   background: linear-gradient(90deg, #7FEFBD 0%, #FFF689 11%, #EC0B43 22%, #7FEFBD 33%, #FFF689 44%, #EC0B43 55%, #7FEFBD 66%, #FFF689 77%, #EC0B43 88%, #7FEFBD 100%);
+   background-size: 300% 100%;
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 4px;
+   filter: blur(3px);
+   z-index: -1;
+   transform: scale(0.99) translateY(3px);
+   }
+   </style>
+</head>
+
+<body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Choigyuwon site</title>
+   <style>
+      @import url("https://fonts.googleapis.com/css?family=Lacquer&display=swap");
+      h1 { font-size : 40px; color : snow;}
+      html {text-align: center; background-image:url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%2337474F" fill-opacity="0.5"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')
+      ;background-color: #263238;}
+      p {font-style : revert; color : white;}
+      #login-form {
+         max-width: 400px;
+         margin: 0 auto;
+         padding: 20px;
+         background: #000000;
+      }
+      #login-form h1 {
+         margin: 0 0 10px 0;
+      }
+      #login-form input{
+         box-sizing: border-box;
+         width: 100%;
+         margin: 10px;
+         padding : 10px;
+      }
+      #login-form input[type=submit]{
+         border:1px solid brown;
+         border-radius: 6px;
+         background: #fffafa;
+      }
+      #login-form input[type=button]{
+         border:1px solid brown;
+         border-radius: 6px;
+         background: #fffafa;
+      }
+      @keyframes sparkle {
+         from {
+            background-position: 0% 100%;
+         }
+         to {
+            background-position: 200% 100%;
+         }
+      }
+
+      .test {
+         display: inline-block;
+         padding: 1em;
+         border-radius: 4px;
+         position: relative;
+      }
+
+      .test:before {
+         animation: sparkle 4s infinite linear;
+         background: linear-gradient(90deg, #7FEFBD 0%, #FFF689 11%, #EC0B43 22%, #7FEFBD 33%, #FFF689 44%, #EC0B43 55%, #7FEFBD 66%, #FFF689 77%, #EC0B43 88%, #7FEFBD 100%);
+         background-size: 300% 100%;
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         border-radius: 4px;
+         filter: blur(3px);
+         z-index: -1;
+         transform: scale(0.99) translateY(3px);
+      }
+   </style>
+</head>
+<body>
+
+
+<h1><span class="test">Academic Management System</span></h1>
+<form method = "post" id="login-form"  action = "login.php">
+   <h2><span style = color:white>Login</span></h2>
+
+   <p>ID</p><input type="text" name="stu_no">
+   <p>PASSWORD</p><input type="password" name="year">
+   <input type="submit" value="Login">
+</form>
+</body>
+</html>

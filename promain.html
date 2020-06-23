@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>관리자</title>
+        <style>
+	@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Lacquer&display=swap");
+        h1 { font-size : 35px; color : snow;font-family: 'Lacquer', sans-serif;font-size:40px;}
+        html {text-align: center; background-image:url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%2337474F" fill-opacity="0.5"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')
+		;background-color: #263238;}
+        p {font-style : revert; color : white;}
+
+	@keyframes sparkle {
+    from {
+        background-position: 0% 100%;
+    }
+    to {
+        background-position: 200% 100%;
+    }
+}
+	
+.test {
+    display: inline-block;
+    padding: 1em;
+    border-radius: 4px;
+    position: relative;
+}
+
+.test:before {
+    animation: sparkle 4s infinite linear;
+    background: linear-gradient(90deg, #7FEFBD 0%, #FFF689 11%, #EC0B43 22%, #7FEFBD 33%, #FFF689 44%, #EC0B43 55%, #7FEFBD 66%, #FFF689 77%, #EC0B43 88%, #7FEFBD 100%);
+    background-size: 300% 100%;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    filter: blur(3px);
+    z-index: -1;
+    transform: scale(0.99) translateY(3px);
+}
+    .myButton {
+        box-shadow:inset 0px -3px 7px 0px #29bbff;
+        background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+        background-color:#2dabf9;
+        border-radius:3px;
+        border:1px solid #0b0e07;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:15px;
+        padding:9px 23px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #263666;
+    }
+    .myButton:hover {
+        background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+        background-color:#0688fa;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+    </style>
+</head>
+<body>
+<center>
+    <table>
+        <br>
+        <font color=white size=5><strong> 학사관리시스템(관리자) </strong></font><br>
+
+        <br>
+        <hr width = 30%>
+        <br>
+        <tr>
+            <td>
+                <form method="post" action="test4.html">
+                    <INPUT type="submit" value="성적입력" class="myButton">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <form method="post" action="prologout.php">
+                    <INPUT type="submit" value="로그아웃" class="myButton">
+                </form>
+            </td>
+        </tr>
+    </table>
+    <hr width = 30%>
+</center>
+</body>
+</html>
